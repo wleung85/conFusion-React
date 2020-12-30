@@ -1,3 +1,20 @@
+## About
+This repo is forked from https://github.com/jmuppala/conFusion-React which is 2 years old and is updated to run on newer versions of React. The original repo was provided by the instructor [jmuppala](https://github.com/jmuppala) to serve as an example of how to hook up the React client with the Node server students had built in the course. My version of the Node server is in the private repo [here](https://github.com/wleung85/coursera-confusion-node).
+
+The instructor had added new features to this version of the React client compared to the ones the students had built. The new features include:
+- **Favorite modules**
+- **Log in/out authentication**
+
+## Connecting React Client with Server
+**Important:** The mongoose database must be populated with dishes, leaders, and promotions already. Of these three types, one *must* be "featured". This is used by the client for displaying the featured items on the home page. If the mongoose database is not populated and the node server isn't running, then the React client will fail to compile.
+1. Start mongoose database `mongod --dbpath=data --bind_ip 127.0.0.1`
+2. Start node server, source is [here](https://github.com/wleung85/coursera-confusion-node). `npm start`
+3. Install dependencies for React Client if not done already. `yarn install`
+4. Start React Client `yarn start`
+
+***
+# Original readme.md from source
+
 This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
 
 Below you will find some information on how to perform common tasks.<br>
