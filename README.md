@@ -6,8 +6,8 @@ The instructor had added new features to this version of the React client compar
 - **Log in/out authentication**
 
 ## Connecting React Client with Server
-**Important:** The mongoose database must be populated with dishes, leaders, and promotions already. Of these three types, one *must* be "featured". This is used by the client for displaying the featured items on the home page. If the mongoose database is not populated and the node server isn't running, then the React client will fail to compile.
-1. Start mongoose database `mongod --dbpath=data --bind_ip 127.0.0.1`
+**Important:** The Mongo database must be populated with dishes, leaders, and promotions already. Of these three types, one *must* be "featured". This is used by the client for displaying the featured items on the home page. If the Mongo database is not populated and the node server isn't running, then the React client will fail to compile.
+1. Start Mongo database `mongod --dbpath=data --bind_ip 127.0.0.1`
 2. Start node server, source is [here](https://github.com/wleung85/coursera-confusion-node). `npm start`
 3. Install dependencies for React Client if not done already. `yarn install`
 4. Start React Client `yarn start`
